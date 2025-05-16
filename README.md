@@ -1,6 +1,6 @@
 # 🦜 Parrot.js — Chrome Extension
 
-Parrot.js is a **Chrome Extension** that automates the process of searching and downloading pronunciation audio files from [Forvo.com](https://forvo.com). It supports **all languages** on Forvo and allows accent filtering for English, Spanish, and Portuguese.
+Parrot.js is a **Chrome Extension** that automates the process of searching and downloading pronunciation audio files from [Forvo.com](https://forvo.com). It supports **all languages** on Forvo and allows accent filtering for English, Spanish, and Portuguese. [Click to install](https://chromewebstore.google.com/detail/parrotjs/acaaagmaicplconnlaabbackegjkipob).
 
 > 📌 This extension opens a side panel that lets you queue words, manage downloads, and handle not-found entries — all from within your browser.
 
