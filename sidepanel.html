@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Forvo Audio Downloader</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+
+<body>
+
+  <h1 class="text-2xl font-bold">Parrot.js</h1>
+
+  <form id="forvoForm">
+
+    <div class="form-group">
+
+      <label for="lang">Language:</label>
+
+          <select name="lang" id="lang">
+
+            <option value="tt">Tatar</option>
+            <option value="de">German</option>
+            <option value="ru">Russian</option>
+            <option value="es">Spanish</option>
+            <option value="en">English</option>
+            <option value="fr">French</option>
+            <option value="ja">Japanese</option>
+            <option value="pl">Polish</option>
+            <option value="nl">Dutch</option>
+            <option value="zh">Mandarin Chinese</option>
+            <option value="pt">Portuguese</option>
+            <option value="it">Italian</option>
+            <option value="grc">Ancient Greek</option>
+            <option value="sv">Swedish</option>
+            <option value="tr">Turkish</option>
+            <option value="ar">Arabic</option>
+            <option value="hu">Hungarian</option>
+            <option value="ca">Catalan</option>
+            <option value="uk">Ukrainian</option>
+            <option value="ko">Korean</option>
+            <option value="cs">Czech</option>
+            <option value="lb">Luxembourgish</option>
+            <option value="el">Greek</option>
+            <option value="fa">Persian</option>
+            <option value="he">Hebrew</option>
+            <option value="sk">Slovak</option>
+            <option value="eo">Esperanto</option>
+            <option value="chm">Mari</option>
+            <option value="yue">Cantonese</option>
+            <option value="fi">Finnish</option>
+            <option value="ro">Romanian</option>
+            <option value="la">Latin</option>
+            <option value="lt">Lithuanian</option>
+            <option value="da">Danish</option>
+            <option value="ur">Urdu</option>
+            <option value="no">Norwegian</option>
+            <option value="bg">Bulgarian</option>
+            <option value="nan">Min Nan</option>
+            <option value="vi">Vietnamese</option>
+            <option value="ta">Tamil</option>
+            <option value="lv">Latvian</option>
+            <option value="hr">Croatian</option>
+            <option value="ga">Irish</option>
+            <option value="kbd">Kabardian</option>
+            <option value="be">Belarusian</option>
+            <option value="is">Icelandic</option>
+            <option value="eu">Basque</option>
+            <option value="wuu">Wu Chinese</option>
+            <option value="prs">Dari</option>
+            <option value="hi">Hindi</option>
+            <option value="sr">Serbian</option>
+            <option value="ba">Bashkir</option>
+            <option value="otk">Old Turkic</option>
+            <option value="pa">Punjabi</option>
+            <option value="th">Thai</option>
+            <option value="nds">Low German</option>
+            <option value="et">Estonian</option>
+            <option value="hak">Hakka</option>
+            <option value="bn">Bengali</option>
+            <option value="az">Azerbaijani</option>
+            <option value="ug">Uyghur</option>
+            <option value="ind">Indonesian</option>
+            <option value="crh">Crimean Tatar</option>
+            <option value="sl">Slovenian</option>
+            <option value="tl">Tagalog</option>
+            <option value="vec">Venetian</option>
+            <option value="sme">Northern Sami</option>
+            <option value="yi">Yiddish</option>
+            <option value="gl">Galician</option>
+            <option value="cy">Welsh</option>
+            <option value="af">Afrikaans</option>
+            <option value="ku">Kurdish</option>
+            <option value="sty">Siberian Tatar</option>
+            <option value="ia">Interlingua</option>
+            <option value="cv">Chuvash</option>
+            <option value="hy">Armenian</option>
+            <option value="scn">Sicilian</option>
+            <option value="uz">Uzbek</option>
+            <option value="sq">Albanian</option>
+            <option value="arz">Egyptian Arabic</option>
+            <option value="oc">Occitan</option>
+            <option value="mk">Macedonian</option>
+            <option value="sw">Swahili</option>
+            <option value="kk">Kazakh</option>
+            <option value="ka">Georgian</option>
+            <option value="lmo">Lombard</option>
+            <option value="kmr">Kurmanji</option>
+            <option value="udm">Udmurt</option>
+            <option value="vls">Flemish</option>
+            <option value="tly">Talysh</option>
+            <option value="sco">Scots</option>
+            <option value="ms">Malay</option>
+            <option value="bs">Bosnian</option>
+            <option value="ast">Asturian</option>
+            <option value="mr">Marathi</option>
+            <option value="gd">Scottish Gaelic</option>
+            <option value="nog">Nogai</option>
+            <option value="gan">Gan Chinese</option>
+            <option value="mn">Mongolian</option>
+            <option value="cdo">Min Dong</option>
+            <option value="ce">Chechen</option>
+            <option value="br">Breton</option>
+            <option value="gsw">Swiss German</option>
+            <option value="sa">Sanskrit</option>
+            <option value="ps">Pashto</option>
+            <option value="sc">Sardinian</option>
+            <option value="nah">Nahuatl</option>
+            <option value="pms">Piedmontese</option>
+            <option value="apc">North Levantine Arabic</option>
+            <option value="te">Telugu</option>
+            <option value="fo">Faroese</option>
+            <option value="jv">Javanese</option>
+            <option value="hsn">Xiang Chinese</option>
+            <option value="nap">Neapolitan</option>
+            <option value="ceb">Cebuano</option>
+            <option value="za">Zhuang</option>
+            <option value="fy">Frisian</option>
+            <option value="sro">Campidanese</option>
+            <option value="mg">Malagasy</option>
+            <option value="ml">Malayalam</option>
+            <option value="tisa">Toisanese Cantonese</option>
+            <option value="tlh">Klingon</option>
+            <option value="gn">Guarani</option>
+            <option value="mt">Maltese</option>
+            <option value="pi">Pali</option>
+            <option value="bar">Bavarian</option>
+            <option value="krc">Karachay-Balkar</option>
+            <option value="zza">Zazaki</option>
+            <option value="cjy">Jin Chinese</option>
+            <option value="ky">Kyrgyz</option>
+            <option value="ady">Adygean</option>
+            <option value="nn">Norwegian Nynorsk</option>
+            <option value="yrl">Nheengatu</option>
+            <option value="gv">Manx</option>
+            <option value="swg">Swabian German</option>
+            <option value="xghu">Southwestern Mandarin</option>
+            <option value="ig">Igbo</option>
+            <option value="frp">Franco-Provençal</option>
+            <option value="trv">Seediq</option>
+            <option value="tok">Toki Pona</option>
+            <option value="sjn">Sindarin</option>
+            <option value="lkt">Lakota</option>
+            <option value="haw">Hawaiian</option>
+            <option value="cr">Cree</option>
+            <option value="kum">Kumyk</option>
+            <option value="kab">Kabyle</option>
+            <option value="gu">Gujarati</option>
+            <option value="non">Old Norse</option>
+            <option value="tg">Tajik</option>
+            <option value="tk">Turkmen</option>
+            <option value="ang">Old English</option>
+            <option value="ha">Hausa</option>
+            <option value="kjh">Khakas</option>
+            <option value="mi">Māori</option>
+            <option value="bo">Tibetan</option>
+            <option value="alt">Altai</option>
+            <option value="gag">Gagauz</option>
+            <option value="ne">Nepali</option>
+            <option value="vo">Volapük</option>
+
+        </select>
+
+    </div>
+
+    <div class="form-group">
+      <label for="accent">Accent:</label>
+      <select name="accent" id="accent">
+        <option value="en_usa">American</option>
+        <option value="en_uk">British</option>
+        <option value="en_other">Other</option>
+      </select>
+    </div>
+
+    <div class="button-group">
+      <button type="button" id="startBtn">Start</button>
+      <button type="button" id="resumeBtn">Resume</button>
+      <button type="button" id="pauseBtn">Pause</button>
+      <button type="button" id="resetBtn">Reset</button>
+    </div>
+
+    <textarea id="searchWords" placeholder="words for searching"></textarea>
+
+    <div class="button-group">
+      <button type="button" id="copyBtn">Copy to clipboard</button>
+      <button type="button" id="clearNotFoundBtn">Clear</button>
+    </div>
+
+    <textarea id="notFoundWords" placeholder="not found words"></textarea>
+
+    <div class="form-group limit-block">
+      <label for="limit">Download no more than:</label>
+      <input type="number" id="limit" min="1" step="1" value="10" placeholder="e.g. 10">
+    </div>
+
+    <div class="form-group">
+      <label>Name pattern:</label>
+      <div class="checkbox-group" id="patternName">
+        <label><input type="radio" name="pattern" value="word">word_1.mp3</label>
+        <label><input type="radio" name="pattern" value="accent" checked>word_en_uk_1.mp3</label>
+        <label id="p1"><input type="radio" name="pattern" value="tag">word_tag_1.mp3</label>
+        <label id="p2"><input type="radio" name="pattern" value="all">word_en_uk_tag_1.mp3</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <input type="text" id="tag" value="tag" placeholder="e.g. verb, common, A1">
+    </div>
+
+  </form>
+
+  <script src="accentOptions.js"></script>
+  <script src="sidepanel.js"></script>
+
+</body>
+</html>
+
